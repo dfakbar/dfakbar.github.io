@@ -35,9 +35,11 @@
       --blue: #4f82f0;
       --green: #10b981;
       --amber: #f59e0b;
+      --purple: #a78bfa;
       --blue-dim: rgba(79,130,240,0.12);
       --green-dim: rgba(16,185,129,0.12);
       --amber-dim: rgba(245,158,11,0.12);
+      --purple-dim: rgba(167,139,250,0.12);
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -334,13 +336,38 @@
       display: flex; align-items: center; gap: 0.5rem;
       transition: all 0.2s; opacity: 0; transform: translateY(10px);
     }
+    .chip.blue { border-color: rgba(79,130,240,0.2); background: rgba(79,130,240,0.04); }
+    .chip.green { border-color: rgba(16,185,129,0.2); background: rgba(16,185,129,0.04); }
+    .chip.amber { border-color: rgba(245,158,11,0.2); background: rgba(245,158,11,0.04); }
+    .chip.purple { border-color: rgba(167,139,250,0.2); background: rgba(167,139,250,0.04); }
     .chip.blue:hover { border-color: var(--blue); color: var(--blue); transform: translateY(-2px); }
     .chip.green:hover { border-color: var(--green); color: var(--green); transform: translateY(-2px); }
     .chip.amber:hover { border-color: var(--amber); color: var(--amber); transform: translateY(-2px); }
+    .chip.purple:hover { border-color: var(--purple); color: var(--purple); transform: translateY(-2px); }
     .chip-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
     .cd-blue { background: var(--blue); }
     .cd-green { background: var(--green); }
     .cd-amber { background: var(--amber); }
+    .cd-purple { background: var(--purple); }
+
+    /* cert more banner */
+    .cert-more {
+      margin-top: 1.2rem;
+      background: var(--bg2); border: 1px dashed var(--border);
+      border-radius: 12px; padding: 1.3rem 1.6rem;
+      display: flex; align-items: center; gap: 1.2rem; flex-wrap: wrap;
+    }
+    .cert-more-icon { font-size: 1.4rem; flex-shrink: 0; }
+    .cert-more-body { flex: 1; min-width: 200px; }
+    .cert-more-title { font-size: 0.88rem; font-weight: 700; color: var(--text); margin-bottom: 0.2rem; }
+    .cert-more-sub { font-size: 0.78rem; color: var(--sub); line-height: 1.6; }
+    .cert-more-badge {
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em;
+      background: var(--blue-dim); color: var(--blue);
+      border: 1px solid rgba(79,130,240,0.25);
+      padding: 0.3rem 0.85rem; border-radius: 100px;
+      white-space: nowrap; flex-shrink: 0;
+    }
 
     /* ── CONTACT ── */
     .contact-box {
@@ -612,6 +639,15 @@
         <div><div class="cert-name">Junior Web Developer</div><div class="cert-from">Lab Akselerasi · Predikat Baik Sekali</div><div class="cert-yr">Mei 2019</div></div>
       </div>
     </div>
+
+    <div class="cert-more r">
+      <div class="cert-more-icon">📌</div>
+      <div class="cert-more-body">
+        <div class="cert-more-title">Sertifikasi terus bertambah</div>
+        <div class="cert-more-sub">Saya aktif mengikuti pelatihan dan ujian sertifikasi baru sebagai wujud nyata komitmen terhadap pengembangan diri yang berkelanjutan. Halaman ini akan selalu diperbarui seiring perjalanan belajar saya.</div>
+      </div>
+      <span class="cert-more-badge">In Progress ✦</span>
+    </div>
   </section>
 
   <!-- SKILLS -->
@@ -655,6 +691,21 @@
           <div class="chip amber"><span class="chip-dot cd-amber"></span>Hardware Troubleshooting</div>
           <div class="chip amber"><span class="chip-dot cd-amber"></span>Hardware Lifecycle Mgmt</div>
           <div class="chip amber"><span class="chip-dot cd-amber"></span>Network Printer Setup</div>
+        </div>
+      </div>
+      <div class="r">
+        <div class="sg-label">🟣 Non-Technical Skills</div>
+        <div class="chips" id="cg4">
+          <div class="chip purple"><span class="chip-dot cd-purple"></span>Strategic Problem Solving</div>
+          <div class="chip purple"><span class="chip-dot cd-purple"></span>Critical Thinking</div>
+          <div class="chip purple"><span class="chip-dot cd-purple"></span>Adaptability</div>
+          <div class="chip purple"><span class="chip-dot cd-purple"></span>Continuous Learning</div>
+          <div class="chip purple"><span class="chip-dot cd-purple"></span>Emotional Intelligence (EQ)</div>
+          <div class="chip purple"><span class="chip-dot cd-purple"></span>Efficiency & Prioritization</div>
+          <div class="chip purple"><span class="chip-dot cd-purple"></span>High Attention to Detail</div>
+          <div class="chip purple"><span class="chip-dot cd-purple"></span>Team Collaboration</div>
+          <div class="chip purple"><span class="chip-dot cd-purple"></span>User Communication</div>
+          <div class="chip purple"><span class="chip-dot cd-purple"></span>Self-Management</div>
         </div>
       </div>
     </div>
@@ -712,7 +763,7 @@
   document.querySelectorAll('.r, .rl, .rr').forEach(el => obs.observe(el));
 
   // Stagger chips
-  ['cg1','cg2','cg3'].forEach(id => {
+  ['cg1','cg2','cg3','cg4'].forEach(id => {
     const g = document.getElementById(id);
     if (!g) return;
     const chips = g.querySelectorAll('.chip');
