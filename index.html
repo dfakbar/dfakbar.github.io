@@ -164,6 +164,19 @@
     }
     .theme-btn:hover { border-color: var(--blue); transform: rotate(20deg); }
 
+    /* Language toggle */
+    .lang-btn {
+      height: 36px; padding: 0 0.75rem; border-radius: 18px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      display: flex; align-items: center; gap: 0.3rem;
+      cursor: pointer; font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.05em; color: var(--sub);
+      transition: all 0.2s; flex-shrink: 0;
+    }
+    .lang-btn:hover { border-color: var(--blue); color: var(--blue); }
+    .lang-btn .lang-flag { font-size: 0.9rem; }
+
     .nav-cta {
       font-size: 0.78rem; font-weight: 700; letter-spacing: 0.04em;
       background: linear-gradient(135deg, var(--blue), #0e6fd8); color: #fff;
@@ -494,14 +507,15 @@
   <div class="nav-logo">DFA.</div>
   <div class="nav-right">
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#certifications">Sertifikasi</a></li>
-      <li><a href="#skills">Skills</a></li>
+      <li><a href="#about" data-i18n="nav_about">About</a></li>
+      <li><a href="#experience" data-i18n="nav_exp">Experience</a></li>
+      <li><a href="#education" data-i18n="nav_edu">Education</a></li>
+      <li><a href="#certifications" data-i18n="nav_cert">Sertifikasi</a></li>
+      <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
     </ul>
+    <button class="lang-btn" id="langBtn" title="Switch language"><span class="lang-flag">🇬🇧</span><span id="langLabel">EN</span></button>
     <button class="theme-btn" id="themeBtn" title="Toggle theme">🌙</button>
-    <a href="#contact" class="nav-cta">Hire Me</a>
+    <a href="#contact" class="nav-cta" data-i18n="nav_hire">Hire Me</a>
   </div>
 </nav>
 
@@ -520,14 +534,14 @@
     IT Support Specialist &amp; <strong>Infrastructure Engineer</strong>
   </p>
 
-  <p class="hero-desc">
+  <p class="hero-desc" data-i18n="hero_desc">
     Profesional IT dengan <b>4+ tahun pengalaman</b> menjaga infrastruktur perusahaan
     manufaktur skala besar tetap beroperasi tanpa hambatan. Saya tidak hanya
     menyelesaikan masalah — saya <b>mencegahnya terjadi sejak awal.</b>
   </p>
 
   <div class="hero-cta">
-    <a href="#contact" class="btn btn-solid">Hubungi Saya</a>
+    <a href="#contact" class="btn btn-solid" data-i18n="hero_cta_contact">Hubungi Saya</a>
     <a href="Resume_Dwi_Fahyu.pdf" download class="btn btn-ghost">📄 Download CV</a>
     <a href="https://www.linkedin.com/in/dfakbar" target="_blank" class="btn btn-outline">LinkedIn</a>
   </div>
@@ -535,19 +549,19 @@
   <div class="hero-stats">
     <div class="stat">
       <span class="stat-val">4+</span>
-      <span class="stat-lbl">Tahun Pengalaman</span>
+      <span class="stat-lbl" data-i18n="stat_exp">Tahun Pengalaman</span>
     </div>
     <div class="stat">
       <span class="stat-val">↑20%</span>
-      <span class="stat-lbl">Peningkatan SLA</span>
+      <span class="stat-lbl" data-i18n="stat_sla">Peningkatan SLA</span>
     </div>
     <div class="stat">
       <span class="stat-val">↓15%</span>
-      <span class="stat-lbl">Reduksi Tiket</span>
+      <span class="stat-lbl" data-i18n="stat_ticket">Reduksi Tiket</span>
     </div>
     <div class="stat">
       <span class="stat-val">3.57</span>
-      <span class="stat-lbl">IPK / 4.00</span>
+      <span class="stat-lbl" data-i18n="stat_gpa">IPK / 4.00</span>
     </div>
   </div>
 </div>
@@ -556,19 +570,19 @@
 <div class="container">
   <section class="section" id="about">
     <div class="section-label">About</div>
-    <h2 class="section-h">IT Support bukan sekadar profesi —<br>ini tentang <em>menjaga bisnis tetap berjalan.</em></h2>
+    <h2 class="section-h" data-i18n="about_h">IT Support bukan sekadar profesi —<br>ini tentang <em>menjaga bisnis tetap berjalan.</em></h2>
     <div class="about-grid">
       <div class="about-text rl">
-        <p>Halo, saya <b>Dwi Fahyu Akbar</b> — praktisi IT yang berbasis di Mojokerto, East Java. Selama 4+ tahun, saya menjadi <b>tulang punggung infrastruktur IT</b> di lingkungan manufaktur skala besar.</p>
-        <p>Saya memiliki pengalaman mengelola server, jaringan LAN/WAN, keamanan endpoint, hingga backup &amp; recovery. Setiap tiket yang masuk bagi saya adalah tanggung jawab — bukan sekadar tugas teknis.</p>
-        <p>Saya membawa <b>pendekatan terukur dan berbasis data</b>: SLA meningkat 20%, volume tiket berkurang 15%, dan seluruh proses didokumentasikan agar tim bisa mandiri.</p>
+        <p data-i18n="about_p1">Halo, saya <b>Dwi Fahyu Akbar</b> — praktisi IT yang berbasis di Mojokerto, East Java. Selama 4+ tahun, saya menjadi <b>tulang punggung infrastruktur IT</b> di lingkungan manufaktur skala besar.</p>
+        <p data-i18n="about_p2">Saya memiliki pengalaman mengelola server, jaringan LAN/WAN, keamanan endpoint, hingga backup &amp; recovery. Setiap tiket yang masuk bagi saya adalah tanggung jawab — bukan sekadar tugas teknis.</p>
+        <p data-i18n="about_p3">Saya membawa <b>pendekatan terukur dan berbasis data</b>: SLA meningkat 20%, volume tiket berkurang 15%, dan seluruh proses didokumentasikan agar tim bisa mandiri.</p>
       </div>
       <div class="rr">
         <div class="info-list">
           <div class="info-item">
             <span class="ii-icon">💼</span>
             <div>
-              <div class="ii-main">IT Support Specialist — Aktif</div>
+              <div class="ii-main" data-i18n="info_role">IT Support Specialist — Aktif</div>
               <div class="ii-sub">PT. Kobin Keramik Industri · Jan 2026</div>
             </div>
           </div>
@@ -576,13 +590,13 @@
             <span class="ii-icon">📍</span>
             <div>
               <div class="ii-main">Mojokerto, East Java</div>
-              <div class="ii-sub">Terbuka: On-site · Hybrid · Remote</div>
+              <div class="ii-sub" data-i18n="info_open">Terbuka: On-site · Hybrid · Remote</div>
             </div>
           </div>
           <div class="info-item">
             <span class="ii-icon">🎓</span>
             <div>
-              <div class="ii-main">S1 Sistem Informasi · IPK 3.57/4.00</div>
+              <div class="ii-main" data-i18n="info_edu">S1 Sistem Informasi · IPK 3.57/4.00</div>
               <div class="ii-sub">Universitas Terbuka Surabaya · 2026</div>
             </div>
           </div>
@@ -595,10 +609,10 @@
           </div>
         </div>
         <div class="kpi-grid">
-          <div class="kpi"><div class="kpi-val">20%</div><div class="kpi-lbl">SLA Naik</div></div>
-          <div class="kpi"><div class="kpi-val">15%</div><div class="kpi-lbl">Tiket Turun</div></div>
-          <div class="kpi"><div class="kpi-val">4+</div><div class="kpi-lbl">Thn Kerja</div></div>
-          <div class="kpi"><div class="kpi-val">3.57</div><div class="kpi-lbl">IPK</div></div>
+          <div class="kpi"><div class="kpi-val">20%</div><div class="kpi-lbl" data-i18n="kpi_sla">SLA Naik</div></div>
+          <div class="kpi"><div class="kpi-val">15%</div><div class="kpi-lbl" data-i18n="kpi_ticket">Tiket Turun</div></div>
+          <div class="kpi"><div class="kpi-val">4+</div><div class="kpi-lbl" data-i18n="kpi_yr">Thn Kerja</div></div>
+          <div class="kpi"><div class="kpi-val">3.57</div><div class="kpi-lbl" data-i18n="kpi_gpa">IPK</div></div>
         </div>
       </div>
     </div>
@@ -606,50 +620,50 @@
 
   <!-- EXPERIENCE -->
   <section class="section" id="experience">
-    <div class="section-label">Experience</div>
-    <h2 class="section-h">Rekam jejak yang diukur<br>dari <em>dampak nyata.</em></h2>
+    <div class="section-label" data-i18n="exp_label">Experience</div>
+    <h2 class="section-h" data-i18n="exp_h">Rekam jejak yang diukur<br>dari <em>dampak nyata.</em></h2>
     <div class="timeline">
 
       <div class="exp-card active r">
         <div class="exp-head">
           <div class="exp-role">IT Support Specialist</div>
-          <span class="exp-tag tag-active">● Saat Ini</span>
+          <span class="exp-tag tag-active" data-i18n="exp1_tag">● Saat Ini</span>
         </div>
         <div class="exp-company">PT. Kobin Keramik Industri — Tancorp Group</div>
-        <div class="exp-meta">Jan 2026 – Sekarang · Ngoro, East Java · Manufaktur Keramik</div>
+        <div class="exp-meta" data-i18n="exp1_meta">Jan 2026 – Sekarang · Ngoro, East Java · Manufaktur Keramik</div>
         <ul class="exp-list">
-          <li><b>Infrastruktur End-to-End:</b> Mengelola server, jaringan LAN/WAN, dan seluruh perangkat IT perusahaan manufaktur skala besar — memastikan operasional berjalan 24/7 tanpa gangguan.</li>
-          <li><b>Single Point of Contact:</b> Menjadi satu-satunya pintu bantuan teknis bagi seluruh karyawan — respons cepat, solusi tepat, via telepon, chat, maupun tatap muka.</li>
-          <li><b>Troubleshooting Presisi:</b> Mendiagnosis dan menyelesaikan insiden teknis secara on-site maupun remote — memangkas waktu downtime secara signifikan. <span class="badge badge-green">↑ SLA +20%</span></li>
-          <li><b>Edukasi & Pelatihan:</b> Membangun budaya mandiri teknis di antara karyawan melalui panduan dan mini-training yang terstruktur.</li>
+          <li data-i18n="exp1_li1"><b>Infrastruktur End-to-End:</b> Mengelola server, jaringan LAN/WAN, dan seluruh perangkat IT perusahaan manufaktur skala besar — memastikan operasional berjalan 24/7 tanpa gangguan.</li>
+          <li data-i18n="exp1_li2"><b>Single Point of Contact:</b> Menjadi satu-satunya pintu bantuan teknis bagi seluruh karyawan — respons cepat, solusi tepat, via telepon, chat, maupun tatap muka.</li>
+          <li data-i18n="exp1_li3"><b>Troubleshooting Presisi:</b> Mendiagnosis dan menyelesaikan insiden teknis secara on-site maupun remote — memangkas waktu downtime secara signifikan. <span class="badge badge-green">↑ SLA +20%</span></li>
+          <li data-i18n="exp1_li4"><b>Edukasi & Pelatihan:</b> Membangun budaya mandiri teknis di antara karyawan melalui panduan dan mini-training yang terstruktur.</li>
         </ul>
       </div>
 
       <div class="exp-card r d1">
         <div class="exp-head">
           <div class="exp-role">IT Helpdesk Technician L1 & L2</div>
-          <span class="exp-tag tag-done">Selesai · 4 Thn 4 Bln</span>
+          <span class="exp-tag tag-done" data-i18n="exp2_tag">Selesai · 4 Thn 4 Bln</span>
         </div>
         <div class="exp-company">PT. Indonesia Tri Sembilan — Alliance One International Group</div>
-        <div class="exp-meta">Sep 2021 – Jan 2026 · Ngoro, East Java · Agribisnis Multinasional</div>
+        <div class="exp-meta" data-i18n="exp2_meta">Sep 2021 – Jan 2026 · Ngoro, East Java · Agribisnis Multinasional</div>
         <ul class="exp-list">
-          <li><b>Helpdesk L1 & L2:</b> Menangani seluruh spektrum tiket teknis — dari masalah hardware/software dasar hingga konfigurasi jaringan kompleks — dengan kepatuhan penuh terhadap SLA.</li>
-          <li><b>Ticketing & Eskalasi:</b> Mengelola alur Service Desk secara menyeluruh: kategorisasi, prioritisasi, eskalasi, dan resolusi — tidak ada tiket yang terlewat atau terlambat.</li>
-          <li><b>Identity & Access Management:</b> Mengelola akun Active Directory, hak akses folder/aplikasi, dan provisioning pengguna baru — menjaga keamanan dan tata kelola data perusahaan.</li>
-          <li><b>Knowledge Base:</b> Membangun dokumentasi Self-Help FAQ yang mengurangi pertanyaan berulang secara drastis. <span class="badge badge-amber">↓ Tiket -15%</span></li>
+          <li data-i18n="exp2_li1"><b>Helpdesk L1 & L2:</b> Menangani seluruh spektrum tiket teknis — dari masalah hardware/software dasar hingga konfigurasi jaringan kompleks — dengan kepatuhan penuh terhadap SLA.</li>
+          <li data-i18n="exp2_li2"><b>Ticketing & Eskalasi:</b> Mengelola alur Service Desk secara menyeluruh: kategorisasi, prioritisasi, eskalasi, dan resolusi — tidak ada tiket yang terlewat atau terlambat.</li>
+          <li data-i18n="exp2_li3"><b>Identity & Access Management:</b> Mengelola akun Active Directory, hak akses folder/aplikasi, dan provisioning pengguna baru — menjaga keamanan dan tata kelola data perusahaan.</li>
+          <li data-i18n="exp2_li4"><b>Knowledge Base:</b> Membangun dokumentasi Self-Help FAQ yang mengurangi pertanyaan berulang secara drastis. <span class="badge badge-amber">↓ Tiket -15%</span></li>
         </ul>
       </div>
 
       <div class="exp-card r d2">
         <div class="exp-head">
-          <div class="exp-role">Junior Web Developer — Internship</div>
-          <span class="exp-tag tag-intern">PKL · Baik Sekali</span>
+          <div class="exp-role" data-i18n="exp3_role">Junior Web Developer — Internship</div>
+          <span class="exp-tag tag-intern" data-i18n="exp3_tag">PKL · Baik Sekali</span>
         </div>
         <div class="exp-company">Lab Akselerasi</div>
-        <div class="exp-meta">Jan – Mei 2019 · Program PKL SMK Negeri 1 Dlanggu</div>
+        <div class="exp-meta" data-i18n="exp3_meta">Jan – Mei 2019 · Program PKL SMK Negeri 1 Dlanggu</div>
         <ul class="exp-list">
-          <li>Mengembangkan fitur aplikasi web dari nol dalam lingkungan profesional nyata selama masa SMK.</li>
-          <li>Meraih predikat <b>Baik Sekali</b> — cerminan etos kerja dan profesionalisme yang terus terjaga hingga hari ini.</li>
+          <li data-i18n="exp3_li1">Mengembangkan fitur aplikasi web dari nol dalam lingkungan profesional nyata selama masa SMK.</li>
+          <li data-i18n="exp3_li2">Meraih predikat <b>Baik Sekali</b> — cerminan etos kerja dan profesionalisme yang terus terjaga hingga hari ini.</li>
         </ul>
       </div>
 
@@ -658,29 +672,29 @@
 
   <!-- EDUCATION -->
   <section class="section" id="education">
-    <div class="section-label">Education</div>
-    <h2 class="section-h">Fondasi akademis yang <em>solid</em>,<br>diperkuat pengalaman lapangan.</h2>
+    <div class="section-label" data-i18n="edu_label">Education</div>
+    <h2 class="section-h" data-i18n="edu_h">Fondasi akademis yang <em>solid</em>,<br>diperkuat pengalaman lapangan.</h2>
     <div class="edu-row">
       <div class="edu-card r d1">
         <div class="edu-icon">🎓</div>
-        <div class="edu-degree">S1 Sistem Informasi</div>
+        <div class="edu-degree" data-i18n="edu1_degree">S1 Sistem Informasi</div>
         <div class="edu-school">Universitas Terbuka Surabaya</div>
-        <div class="edu-period">Jan 2022 – Des 2025 · Lulus 2026</div>
+        <div class="edu-period" data-i18n="edu1_period">Jan 2022 – Des 2025 · Lulus 2026</div>
         <span class="edu-gpa">⭐ IPK 3.57 / 4.00</span>
       </div>
       <div class="edu-card r d2">
         <div class="edu-icon">🏫</div>
-        <div class="edu-degree">Rekayasa Perangkat Lunak</div>
+        <div class="edu-degree" data-i18n="edu2_degree">Rekayasa Perangkat Lunak</div>
         <div class="edu-school">SMK Negeri 1 Dlanggu</div>
-        <div class="edu-period">Jun 2017 – Mei 2020 · Nilai 86/100</div>
+        <div class="edu-period" data-i18n="edu2_period">Jun 2017 – Mei 2020 · Nilai 86/100</div>
       </div>
     </div>
   </section>
 
   <!-- CERTIFICATIONS -->
   <section class="section" id="certifications">
-    <div class="section-label">Certifications</div>
-    <h2 class="section-h">Setiap sertifikat adalah bukti<br>komitmen pada <em>continuous learning.</em></h2>
+    <div class="section-label" data-i18n="cert_label">Certifications</div>
+    <h2 class="section-h" data-i18n="cert_h">Setiap sertifikat adalah bukti<br>komitmen pada <em>continuous learning.</em></h2>
     <div class="cert-grid">
       <div class="cert-card r">
         <div class="cert-ico">🗄️</div>
@@ -715,8 +729,8 @@
     <div class="cert-more r">
       <div class="cert-more-icon">📌</div>
       <div class="cert-more-body">
-        <div class="cert-more-title">Sertifikasi terus bertambah</div>
-        <div class="cert-more-sub">Saya aktif mengikuti pelatihan dan ujian sertifikasi baru sebagai wujud nyata komitmen terhadap pengembangan diri yang berkelanjutan. Halaman ini akan selalu diperbarui seiring perjalanan belajar saya.</div>
+        <div class="cert-more-title" data-i18n="cert_more_title">Sertifikasi terus bertambah</div>
+        <div class="cert-more-sub" data-i18n="cert_more_sub">Saya aktif mengikuti pelatihan dan ujian sertifikasi baru sebagai wujud nyata komitmen terhadap pengembangan diri yang berkelanjutan. Halaman ini akan selalu diperbarui seiring perjalanan belajar saya.</div>
       </div>
       <span class="cert-more-badge">In Progress ✦</span>
     </div>
@@ -725,7 +739,7 @@
   <!-- SKILLS -->
   <section class="section" id="skills">
     <div class="section-label">Skills</div>
-    <h2 class="section-h">Keahlian yang siap digunakan<br><em>mulai hari pertama.</em></h2>
+    <h2 class="section-h" data-i18n="skills_h">Keahlian yang siap digunakan<br><em>mulai hari pertama.</em></h2>
     <div class="skill-groups">
       <div class="r">
         <div class="sg-label">🔵 Support & Service Management</div>
@@ -786,8 +800,8 @@
   <!-- CONTACT -->
   <section class="section" id="contact">
     <div class="contact-box r">
-      <h2 class="contact-h">Mari bekerja bersama. 🤝</h2>
-      <p class="contact-p">
+      <h2 class="contact-h" data-i18n="contact_h">Mari bekerja bersama. 🤝</h2>
+      <p class="contact-p" data-i18n="contact_p">
         Saya siap bergabung dengan tim Anda dan memberikan dampak nyata sejak hari pertama.
         <b>Hubungi saya</b> melalui salah satu kanal berikut.
       </p>
@@ -807,10 +821,160 @@
   </section>
 </div>
 
-<footer>© 2026 Dwi Fahyu Akbar · IT Support Specialist · Mojokerto, East Java</footer>
+<footer data-i18n="footer">© 2026 Dwi Fahyu Akbar · IT Support Specialist · Mojokerto, East Java</footer>
 
 <script>
-  // Theme
+  // ── TRANSLATIONS ──
+  const translations = {
+    id: {
+      nav_about: 'About',
+      nav_exp: 'Experience',
+      nav_edu: 'Education',
+      nav_cert: 'Sertifikasi',
+      nav_skills: 'Skills',
+      nav_hire: 'Hire Me',
+      hero_desc: 'Profesional IT dengan <b>4+ tahun pengalaman</b> menjaga infrastruktur perusahaan manufaktur skala besar tetap beroperasi tanpa hambatan. Saya tidak hanya menyelesaikan masalah — saya <b>mencegahnya terjadi sejak awal.</b>',
+      hero_cta_contact: 'Hubungi Saya',
+      stat_exp: 'Tahun Pengalaman',
+      stat_sla: 'Peningkatan SLA',
+      stat_ticket: 'Reduksi Tiket',
+      stat_gpa: 'IPK / 4.00',
+      about_h: 'IT Support bukan sekadar profesi —<br>ini tentang <em>menjaga bisnis tetap berjalan.</em>',
+      about_p1: 'Halo, saya <b>Dwi Fahyu Akbar</b> — praktisi IT yang berbasis di Mojokerto, East Java. Selama 4+ tahun, saya menjadi <b>tulang punggung infrastruktur IT</b> di lingkungan manufaktur skala besar.',
+      about_p2: 'Saya memiliki pengalaman mengelola server, jaringan LAN/WAN, keamanan endpoint, hingga backup &amp; recovery. Setiap tiket yang masuk bagi saya adalah tanggung jawab — bukan sekadar tugas teknis.',
+      about_p3: 'Saya membawa <b>pendekatan terukur dan berbasis data</b>: SLA meningkat 20%, volume tiket berkurang 15%, dan seluruh proses didokumentasikan agar tim bisa mandiri.',
+      info_role: 'IT Support Specialist — Aktif',
+      info_open: 'Terbuka: On-site · Hybrid · Remote',
+      info_edu: 'S1 Sistem Informasi · IPK 3.57/4.00',
+      kpi_sla: 'SLA Naik',
+      kpi_ticket: 'Tiket Turun',
+      kpi_yr: 'Thn Kerja',
+      kpi_gpa: 'IPK',
+      exp_label: 'Experience',
+      exp_h: 'Rekam jejak yang diukur<br>dari <em>dampak nyata.</em>',
+      exp1_tag: '● Saat Ini',
+      exp1_meta: 'Jan 2026 – Sekarang · Ngoro, East Java · Manufaktur Keramik',
+      exp1_li1: '<b>Infrastruktur End-to-End:</b> Mengelola server, jaringan LAN/WAN, dan seluruh perangkat IT perusahaan manufaktur skala besar — memastikan operasional berjalan 24/7 tanpa gangguan.',
+      exp1_li2: '<b>Single Point of Contact:</b> Menjadi satu-satunya pintu bantuan teknis bagi seluruh karyawan — respons cepat, solusi tepat, via telepon, chat, maupun tatap muka.',
+      exp1_li3: '<b>Troubleshooting Presisi:</b> Mendiagnosis dan menyelesaikan insiden teknis secara on-site maupun remote — memangkas waktu downtime secara signifikan. <span class="badge badge-green">↑ SLA +20%</span>',
+      exp1_li4: '<b>Edukasi & Pelatihan:</b> Membangun budaya mandiri teknis di antara karyawan melalui panduan dan mini-training yang terstruktur.',
+      exp2_tag: 'Selesai · 4 Thn 4 Bln',
+      exp2_meta: 'Sep 2021 – Jan 2026 · Ngoro, East Java · Agribisnis Multinasional',
+      exp2_li1: '<b>Helpdesk L1 & L2:</b> Menangani seluruh spektrum tiket teknis — dari masalah hardware/software dasar hingga konfigurasi jaringan kompleks — dengan kepatuhan penuh terhadap SLA.',
+      exp2_li2: '<b>Ticketing & Eskalasi:</b> Mengelola alur Service Desk secara menyeluruh: kategorisasi, prioritisasi, eskalasi, dan resolusi — tidak ada tiket yang terlewat atau terlambat.',
+      exp2_li3: '<b>Identity & Access Management:</b> Mengelola akun Active Directory, hak akses folder/aplikasi, dan provisioning pengguna baru — menjaga keamanan dan tata kelola data perusahaan.',
+      exp2_li4: '<b>Knowledge Base:</b> Membangun dokumentasi Self-Help FAQ yang mengurangi pertanyaan berulang secara drastis. <span class="badge badge-amber">↓ Tiket -15%</span>',
+      exp3_role: 'Junior Web Developer — Internship',
+      exp3_tag: 'PKL · Baik Sekali',
+      exp3_meta: 'Jan – Mei 2019 · Program PKL SMK Negeri 1 Dlanggu',
+      exp3_li1: 'Mengembangkan fitur aplikasi web dari nol dalam lingkungan profesional nyata selama masa SMK.',
+      exp3_li2: 'Meraih predikat <b>Baik Sekali</b> — cerminan etos kerja dan profesionalisme yang terus terjaga hingga hari ini.',
+      edu_label: 'Education',
+      edu_h: 'Fondasi akademis yang <em>solid</em>,<br>diperkuat pengalaman lapangan.',
+      edu1_degree: 'S1 Sistem Informasi',
+      edu1_period: 'Jan 2022 – Des 2025 · Lulus 2026',
+      edu2_degree: 'Rekayasa Perangkat Lunak',
+      edu2_period: 'Jun 2017 – Mei 2020 · Nilai 86/100',
+      cert_label: 'Certifications',
+      cert_h: 'Setiap sertifikat adalah bukti<br>komitmen pada <em>continuous learning.</em>',
+      cert_more_title: 'Sertifikasi terus bertambah',
+      cert_more_sub: 'Saya aktif mengikuti pelatihan dan ujian sertifikasi baru sebagai wujud nyata komitmen terhadap pengembangan diri yang berkelanjutan. Halaman ini akan selalu diperbarui seiring perjalanan belajar saya.',
+      skills_h: 'Keahlian yang siap digunakan<br><em>mulai hari pertama.</em>',
+      contact_h: 'Mari bekerja bersama. 🤝',
+      contact_p: 'Saya siap bergabung dengan tim Anda dan memberikan dampak nyata sejak hari pertama. <b>Hubungi saya</b> melalui salah satu kanal berikut.',
+      footer: '© 2026 Dwi Fahyu Akbar · IT Support Specialist · Mojokerto, East Java',
+    },
+    en: {
+      nav_about: 'About',
+      nav_exp: 'Experience',
+      nav_edu: 'Education',
+      nav_cert: 'Certifications',
+      nav_skills: 'Skills',
+      nav_hire: 'Hire Me',
+      hero_desc: 'IT professional with <b>4+ years of experience</b> keeping large-scale manufacturing infrastructure running without disruption. I don\'t just fix problems — I <b>prevent them from happening in the first place.</b>',
+      hero_cta_contact: 'Contact Me',
+      stat_exp: 'Years of Experience',
+      stat_sla: 'SLA Improvement',
+      stat_ticket: 'Ticket Reduction',
+      stat_gpa: 'GPA / 4.00',
+      about_h: 'IT Support is more than a profession —<br>it\'s about <em>keeping business running.</em>',
+      about_p1: 'Hi, I\'m <b>Dwi Fahyu Akbar</b> — an IT practitioner based in Mojokerto, East Java. For 4+ years, I have been the <b>backbone of IT infrastructure</b> in a large-scale manufacturing environment.',
+      about_p2: 'I have experience managing servers, LAN/WAN networks, endpoint security, and backup &amp; recovery. Every incoming ticket is a responsibility for me — not just a technical task.',
+      about_p3: 'I bring a <b>data-driven, measurable approach</b>: SLA improved by 20%, ticket volume reduced by 15%, and all processes are documented so the team can operate independently.',
+      info_role: 'IT Support Specialist — Active',
+      info_open: 'Open to: On-site · Hybrid · Remote',
+      info_edu: 'Bachelor of Information Systems · GPA 3.57/4.00',
+      kpi_sla: 'SLA Up',
+      kpi_ticket: 'Tickets Down',
+      kpi_yr: 'Yrs Work',
+      kpi_gpa: 'GPA',
+      exp_label: 'Experience',
+      exp_h: 'A track record measured<br>by <em>real impact.</em>',
+      exp1_tag: '● Current',
+      exp1_meta: 'Jan 2026 – Present · Ngoro, East Java · Ceramic Manufacturing',
+      exp1_li1: '<b>End-to-End Infrastructure:</b> Managing servers, LAN/WAN networks, and all IT devices in a large-scale manufacturing company — ensuring 24/7 operations without disruption.',
+      exp1_li2: '<b>Single Point of Contact:</b> Serving as the sole technical support channel for all employees — fast response, accurate solutions via phone, chat, or in person.',
+      exp1_li3: '<b>Precision Troubleshooting:</b> Diagnosing and resolving technical incidents on-site and remotely — significantly reducing downtime. <span class="badge badge-green">↑ SLA +20%</span>',
+      exp1_li4: '<b>Education & Training:</b> Building a culture of technical self-sufficiency among employees through structured guides and mini-training sessions.',
+      exp2_tag: 'Completed · 4 Yrs 4 Mos',
+      exp2_meta: 'Sep 2021 – Jan 2026 · Ngoro, East Java · Multinational Agribusiness',
+      exp2_li1: '<b>Helpdesk L1 & L2:</b> Handled the full spectrum of technical tickets — from basic hardware/software issues to complex network configurations — with full SLA compliance.',
+      exp2_li2: '<b>Ticketing & Escalation:</b> Managed the entire Service Desk workflow: categorization, prioritization, escalation, and resolution — no ticket was missed or delayed.',
+      exp2_li3: '<b>Identity & Access Management:</b> Managed Active Directory accounts, folder/application access rights, and new user provisioning — maintaining company data security and governance.',
+      exp2_li4: '<b>Knowledge Base:</b> Built Self-Help FAQ documentation that drastically reduced repetitive inquiries. <span class="badge badge-amber">↓ Tickets -15%</span>',
+      exp3_role: 'Junior Web Developer — Internship',
+      exp3_tag: 'Internship · Excellent',
+      exp3_meta: 'Jan – May 2019 · Internship Program at SMK Negeri 1 Dlanggu',
+      exp3_li1: 'Developed web application features from scratch in a real professional environment during vocational high school.',
+      exp3_li2: 'Achieved an <b>Excellent</b> grade — a reflection of the work ethic and professionalism maintained to this day.',
+      edu_label: 'Education',
+      edu_h: 'A <em>solid</em> academic foundation,<br>strengthened by field experience.',
+      edu1_degree: 'Bachelor of Information Systems',
+      edu1_period: 'Jan 2022 – Dec 2025 · Graduated 2026',
+      edu2_degree: 'Software Engineering',
+      edu2_period: 'Jun 2017 – May 2020 · Score 86/100',
+      cert_label: 'Certifications',
+      cert_h: 'Each certificate is proof<br>of commitment to <em>continuous learning.</em>',
+      cert_more_title: 'More certifications on the way',
+      cert_more_sub: 'I actively pursue new training and certification exams as a tangible commitment to continuous self-development. This page will always be updated as my learning journey progresses.',
+      skills_h: 'Skills ready to deploy<br><em>from day one.</em>',
+      contact_h: "Let's work together. 🤝",
+      contact_p: 'I\'m ready to join your team and make a real impact from day one. <b>Contact me</b> through any of the channels below.',
+      footer: '© 2026 Dwi Fahyu Akbar · IT Support Specialist · Mojokerto, East Java',
+    }
+  };
+
+  // ── LANGUAGE ──
+  let currentLang = localStorage.getItem('dfa-lang') || 'id';
+  const langBtn = document.getElementById('langBtn');
+  const langLabel = document.getElementById('langLabel');
+
+  function applyLang(lang) {
+    currentLang = lang;
+    localStorage.setItem('dfa-lang', lang);
+    document.documentElement.setAttribute('lang', lang);
+    const t = translations[lang];
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (t[key] !== undefined) el.innerHTML = t[key];
+    });
+    if (lang === 'en') {
+      langLabel.textContent = 'ID';
+      langBtn.querySelector('.lang-flag').textContent = '🇮🇩';
+    } else {
+      langLabel.textContent = 'EN';
+      langBtn.querySelector('.lang-flag').textContent = '🇬🇧';
+    }
+  }
+
+  langBtn.addEventListener('click', () => {
+    applyLang(currentLang === 'id' ? 'en' : 'id');
+  });
+
+  // Apply saved language on load
+  applyLang(currentLang);
+
+  // ── THEME ──
   const html = document.documentElement;
   const btn = document.getElementById('themeBtn');
   const saved = localStorage.getItem('dfa-theme') || 'light';
