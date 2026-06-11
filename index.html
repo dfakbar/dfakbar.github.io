@@ -542,7 +542,7 @@
 
   <div class="hero-cta">
     <a href="#contact" class="btn btn-solid" data-i18n="hero_cta_contact">Hubungi Saya</a>
-    <a href="Resume_Dwi_Fahyu.pdf" download class="btn btn-ghost">📄 Download CV</a>
+    <a href="Resume_Dwi_Fahyu_Id.pdf" download="Resume_Dwi_Fahyu_Id.pdf" id="cvDownloadBtn1" class="btn btn-ghost">📄 Download CV</a>
     <a href="https://www.linkedin.com/in/dfakbar" target="_blank" class="btn btn-outline">LinkedIn</a>
   </div>
 
@@ -807,7 +807,7 @@
       </p>
       <div class="contact-btns">
         <a href="https://www.linkedin.com/in/dfakbar" target="_blank" class="btn btn-solid">LinkedIn</a>
-        <a href="Resume_Dwi_Fahyu.pdf" download class="btn btn-ghost">📄 Download CV</a>
+        <a href="Resume_Dwi_Fahyu_Id.pdf" download="Resume_Dwi_Fahyu_Id.pdf" id="cvDownloadBtn2" class="btn btn-ghost">📄 Download CV</a>
         <a href="https://wa.me/6287755589951" target="_blank" class="btn btn-outline">💬 WhatsApp</a>
         <a href="mailto:dwifahyuakbar1225@gmail.com" class="btn btn-outline">✉️ Email</a>
       </div>
@@ -965,6 +965,13 @@
       langLabel.textContent = 'EN';
       langBtn.querySelector('.lang-flag').textContent = '🇬🇧';
     }
+    // Update CV download filename based on language
+    const cvFile = lang === 'en' ? 'Resume_Dwi_Fahyu_En.pdf' : 'Resume_Dwi_Fahyu_Id.pdf';
+    const cvName = lang === 'en' ? 'Resume_Dwi_Fahyu_En' : 'Resume_Dwi_Fahyu_Id';
+    ['cvDownloadBtn1', 'cvDownloadBtn2'].forEach(id => {
+      const btn = document.getElementById(id);
+      if (btn) { btn.href = cvFile; btn.download = cvName; }
+    });
   }
 
   langBtn.addEventListener('click', () => {
