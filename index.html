@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="google-site-verification" content="1Ia6D55FhW2ohotiGtW9QOLy-ALLMqT9UfjpgC_-ZqQ"/>
   <title>Dwi Fahyu Akbar — IT Support Specialist | Mojokerto, East Java</title>
-  <meta name="description" content="Dwi Fahyu Akbar — IT Support Specialist & Infrastructure Engineer dengan 4+ tahun pengalaman. Ahli jaringan Cisco/Mikrotik, server, helpdesk L1&L2, dan Active Directory. Open to work di Mojokerto, Surabaya, dan remote."/>
+  <meta name="description" content="Dwi Fahyu Akbar — IT Support Specialist & Infrastructure Engineer berpengalaman sejak 2021. Ahli jaringan Cisco/Mikrotik, server, helpdesk L1&L2, dan Active Directory. Open to work di Mojokerto, Surabaya, dan remote."/>
   <meta name="keywords" content="IT Support Specialist, IT Helpdesk, Infrastructure Engineer, Dwi Fahyu Akbar, Mojokerto, Surabaya, East Java, Cisco, Mikrotik, Active Directory, Windows Server, Network Administrator, IT Support Indonesia"/>
   <meta name="author" content="Dwi Fahyu Akbar"/>
   <meta name="robots" content="index, follow"/>
@@ -15,7 +15,7 @@
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://dfakbar.github.io/"/>
   <meta property="og:title" content="Dwi Fahyu Akbar — IT Support Specialist"/>
-  <meta property="og:description" content="IT Support Specialist & Infrastructure Engineer dengan 4+ tahun pengalaman. Ahli jaringan, server, dan helpdesk. Open to work."/>
+  <meta property="og:description" content="IT Support Specialist & Infrastructure Engineer berpengalaman sejak 2021. Ahli jaringan, server, dan helpdesk. Open to work."/>
   <meta property="og:image" content="https://dfakbar.github.io/og-image.png"/>
   <meta property="og:locale" content="id_ID"/>
   <meta property="og:site_name" content="Portofolio Dwi Fahyu Akbar"/>
@@ -23,7 +23,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:title" content="Dwi Fahyu Akbar — IT Support Specialist"/>
-  <meta name="twitter:description" content="IT Support Specialist & Infrastructure Engineer · 4+ tahun pengalaman · Open to work"/>
+  <meta name="twitter:description" content="IT Support Specialist & Infrastructure Engineer · Berpengalaman sejak 2021 · Open to work"/>
   <meta name="twitter:image" content="https://dfakbar.github.io/og-image.png"/>
 
   <!-- Structured Data (Google rich results) -->
@@ -33,7 +33,7 @@
     "@type": "Person",
     "name": "Dwi Fahyu Akbar",
     "jobTitle": "IT Support Specialist",
-    "description": "IT Support Specialist dan Infrastructure Engineer dengan 4+ tahun pengalaman dalam helpdesk L1&L2, administrasi jaringan, dan manajemen server.",
+    "description": "IT Support Specialist dan Infrastructure Engineer dengan pengalaman sejak 2021 dalam helpdesk L1&L2, administrasi jaringan, dan manajemen server.",
     "url": "https://dfakbar.github.io/",
     "email": "dwifahyuakbar1225@gmail.com",
     "telephone": "+6287755589951",
@@ -391,6 +391,21 @@
     .edu-period { color: var(--sub); font-size: 0.76rem; margin-bottom: 0.9rem; }
     .edu-gpa { display: inline-block; background: var(--amber-dim); color: var(--amber); border: 1px solid rgba(245,158,11,0.25); padding: 0.15rem 0.7rem; border-radius: 100px; font-size: 0.72rem; font-weight: 700; }
 
+    /* ── PROJECTS ── */
+    .proj-sub { font-size: 0.82rem; color: var(--sub); margin: -1rem 0 1.6rem; }
+    .proj-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px,1fr)); gap: 1rem; }
+    .proj-card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+      padding: 1.3rem 1.4rem; display: flex; flex-direction: column; gap: 0.5rem;
+      transition: all 0.25s;
+    }
+    .proj-card:hover { border-color: var(--blue); transform: translateY(-3px); box-shadow: var(--shadow); }
+    .proj-year { font-family: 'Fraunces', serif; font-weight: 800; font-size: 1.5rem; color: var(--blue); line-height: 1; }
+    .proj-title { font-size: 0.95rem; font-weight: 700; color: var(--text); }
+    .proj-desc { font-size: 0.82rem; color: var(--sub); line-height: 1.65; flex: 1; }
+    .proj-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.3rem; }
+    .proj-tags span { font-size: 0.68rem; font-weight: 600; padding: 0.18rem 0.55rem; border-radius: 999px; background: var(--blue-dim); color: var(--blue); }
+
     /* ── CERTIFICATIONS ── */
     .cert-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px,1fr)); gap: 0.9rem; }
     .cert-card {
@@ -509,6 +524,7 @@
     <ul class="nav-links">
       <li><a href="#about" data-i18n="nav_about">About</a></li>
       <li><a href="#experience" data-i18n="nav_exp">Experience</a></li>
+      <li><a href="#projects" data-i18n="nav_proj">Proyek</a></li>
       <li><a href="#education" data-i18n="nav_edu">Education</a></li>
       <li><a href="#certifications" data-i18n="nav_cert">Sertifikasi</a></li>
       <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
@@ -531,11 +547,11 @@
   </h1>
 
   <p class="hero-title">
-    IT Support Specialist &amp; <strong>Infrastructure Engineer</strong>
+    IT Support &amp; <strong>Infrastructure Engineer</strong>
   </p>
 
   <p class="hero-desc" data-i18n="hero_desc">
-    Profesional IT dengan <b>4+ tahun pengalaman</b> menjaga infrastruktur perusahaan
+    Profesional IT dengan <b>5+ tahun pengalaman</b> menjaga infrastruktur perusahaan
     manufaktur skala besar tetap beroperasi tanpa hambatan. Saya tidak hanya
     menyelesaikan masalah — saya <b>mencegahnya terjadi sejak awal.</b>
   </p>
@@ -548,7 +564,7 @@
 
   <div class="hero-stats">
     <div class="stat">
-      <span class="stat-val">4+</span>
+      <span class="stat-val" data-dyn="yrs">5+</span>
       <span class="stat-lbl" data-i18n="stat_exp">Tahun Pengalaman</span>
     </div>
     <div class="stat">
@@ -573,17 +589,17 @@
     <h2 class="section-h" data-i18n="about_h">IT Support bukan sekadar profesi —<br>ini tentang <em>menjaga bisnis tetap berjalan.</em></h2>
     <div class="about-grid">
       <div class="about-text rl">
-        <p data-i18n="about_p1">Halo, saya <b>Dwi Fahyu Akbar</b> — praktisi IT yang berbasis di Mojokerto, East Java. Selama 4+ tahun, saya menjadi <b>tulang punggung infrastruktur IT</b> di lingkungan manufaktur skala besar.</p>
+        <p data-i18n="about_p1">Halo, saya <b>Dwi Fahyu Akbar</b> — praktisi IT yang berbasis di Mojokerto, East Java. Selama 5+ tahun, saya menjadi <b>tulang punggung infrastruktur IT</b> di lingkungan manufaktur skala besar.</p>
         <p data-i18n="about_p2">Saya memiliki pengalaman mengelola server, jaringan LAN/WAN, keamanan endpoint, hingga backup &amp; recovery. Setiap tiket yang masuk bagi saya adalah tanggung jawab — bukan sekadar tugas teknis.</p>
-        <p data-i18n="about_p3">Saya membawa <b>pendekatan terukur dan berbasis data</b>: SLA meningkat 20%, volume tiket berkurang 15%, dan seluruh proses didokumentasikan agar tim bisa mandiri.</p>
+        <p data-i18n="about_p3">Saya membawa <b>pendekatan terukur dan berbasis data</b>: setiap proses didokumentasikan, dan masalah berulang dicegah lewat Knowledge Base agar tim bisa mandiri.</p>
       </div>
       <div class="rr">
         <div class="info-list">
           <div class="info-item">
             <span class="ii-icon">💼</span>
             <div>
-              <div class="ii-main" data-i18n="info_role">IT Support Specialist — Aktif</div>
-              <div class="ii-sub">PT. Kobin Keramik Industri · Jan 2026</div>
+              <div class="ii-main" data-i18n="info_role">Hardware Operation &amp; Service Engineer — Aktif</div>
+              <div class="ii-sub">PT. Motasa Indonesia · Okt 2026</div>
             </div>
           </div>
           <div class="info-item">
@@ -608,12 +624,6 @@
             </div>
           </div>
         </div>
-        <div class="kpi-grid">
-          <div class="kpi"><div class="kpi-val">20%</div><div class="kpi-lbl" data-i18n="kpi_sla">SLA Naik</div></div>
-          <div class="kpi"><div class="kpi-val">15%</div><div class="kpi-lbl" data-i18n="kpi_ticket">Tiket Turun</div></div>
-          <div class="kpi"><div class="kpi-val">4+</div><div class="kpi-lbl" data-i18n="kpi_yr">Thn Kerja</div></div>
-          <div class="kpi"><div class="kpi-val">3.57</div><div class="kpi-lbl" data-i18n="kpi_gpa">IPK</div></div>
-        </div>
       </div>
     </div>
   </section>
@@ -626,47 +636,104 @@
 
       <div class="exp-card active r">
         <div class="exp-head">
-          <div class="exp-role">IT Support Specialist</div>
-          <span class="exp-tag tag-active" data-i18n="exp1_tag">● Saat Ini</span>
+          <div class="exp-role">Hardware Operation and Service Engineer</div>
+          <span class="exp-tag tag-active" data-i18n="exp1_tag">● Saat Ini · 1 Bln</span>
         </div>
-        <div class="exp-company">PT. Kobin Keramik Industri — Tancorp Group</div>
-        <div class="exp-meta" data-i18n="exp1_meta">Jan 2026 – Sekarang · Ngoro, East Java · Manufaktur Keramik</div>
+        <div class="exp-company">PT. Motasa Indonesia</div>
+        <div class="exp-meta" data-i18n="exp1_meta">Okt 2026 – Sekarang · Mojokerto, East Java · Kontrak · On-site</div>
         <ul class="exp-list">
-          <li data-i18n="exp1_li1"><b>Infrastruktur End-to-End:</b> Mengelola server, jaringan LAN/WAN, dan seluruh perangkat IT perusahaan manufaktur skala besar — memastikan operasional berjalan 24/7 tanpa gangguan.</li>
-          <li data-i18n="exp1_li2"><b>Single Point of Contact:</b> Menjadi satu-satunya pintu bantuan teknis bagi seluruh karyawan — respons cepat, solusi tepat, via telepon, chat, maupun tatap muka.</li>
-          <li data-i18n="exp1_li3"><b>Troubleshooting Presisi:</b> Mendiagnosis dan menyelesaikan insiden teknis secara on-site maupun remote — memangkas waktu downtime secara signifikan. <span class="badge badge-green">↑ SLA +20%</span></li>
-          <li data-i18n="exp1_li4"><b>Edukasi & Pelatihan:</b> Membangun budaya mandiri teknis di antara karyawan melalui panduan dan mini-training yang terstruktur.</li>
+          <li data-i18n="exp1_li1"><b>Hardware &amp; Device Support:</b> Melakukan instalasi, konfigurasi, pemeliharaan, dan troubleshooting komprehensif pada PC, laptop, tablet, smartphone, serta perangkat pendukung seperti printer dan UPS.</li>
+          <li data-i18n="exp1_li2"><b>Network Infrastructure:</b> Mengelola instalasi, konfigurasi, dan pemeliharaan jaringan LAN, Fiber Optic, CCTV, Access Control, serta Telephony/PABX perusahaan.</li>
+          <li data-i18n="exp1_li3"><b>Technical Design &amp; Documentation:</b> Mengoperasikan software gambar teknis seperti Microsoft Visio untuk perancangan dan kebutuhan dokumentasi operasional.</li>
+          <li data-i18n="exp1_li4"><b>Safety Systems Maintenance:</b> Memahami dan mengawasi operasional konsep dasar sistem keselamatan kerja, termasuk pemeliharaan sistem Fire Alarm.</li>
+          <li data-i18n="exp1_li5"><b>User Support &amp; Coordination:</b> Menjadi titik kontak utama bagi karyawan dalam merespons, mendokumentasikan, dan menyelesaikan kendala teknis secara cepat dan efisien.</li>
         </ul>
       </div>
 
       <div class="exp-card r d1">
         <div class="exp-head">
-          <div class="exp-role">IT Helpdesk Technician L1 & L2</div>
-          <span class="exp-tag tag-done" data-i18n="exp2_tag">Selesai · 4 Thn 4 Bln</span>
+          <div class="exp-role">IT Support Specialist</div>
+          <span class="exp-tag tag-done" data-i18n="exp2_tag">Selesai · 9 Bln</span>
         </div>
-        <div class="exp-company">PT. Indonesia Tri Sembilan — Alliance One International Group</div>
-        <div class="exp-meta" data-i18n="exp2_meta">Sep 2021 – Jan 2026 · Ngoro, East Java · Agribisnis Multinasional</div>
+        <div class="exp-company">PT. Kobin Keramik Industri — Tancorp Group</div>
+        <div class="exp-meta" data-i18n="exp2_meta">Jan 2026 – Sep 2026 · Mojokerto, East Java · Kontrak · On-site</div>
         <ul class="exp-list">
-          <li data-i18n="exp2_li1"><b>Helpdesk L1 & L2:</b> Menangani seluruh spektrum tiket teknis — dari masalah hardware/software dasar hingga konfigurasi jaringan kompleks — dengan kepatuhan penuh terhadap SLA.</li>
-          <li data-i18n="exp2_li2"><b>Ticketing & Eskalasi:</b> Mengelola alur Service Desk secara menyeluruh: kategorisasi, prioritisasi, eskalasi, dan resolusi — tidak ada tiket yang terlewat atau terlambat.</li>
-          <li data-i18n="exp2_li3"><b>Identity & Access Management:</b> Mengelola akun Active Directory, hak akses folder/aplikasi, dan provisioning pengguna baru — menjaga keamanan dan tata kelola data perusahaan.</li>
-          <li data-i18n="exp2_li4"><b>Knowledge Base:</b> Membangun dokumentasi Self-Help FAQ yang mengurangi pertanyaan berulang secara drastis. <span class="badge badge-amber">↓ Tiket -15%</span></li>
+          <li data-i18n="exp2_li1"><b>Dukungan Teknis &amp; Pemeliharaan:</b> Menjadi titik kontak pertama serta melakukan instalasi, konfigurasi, dan pemeliharaan rutin pada komputer (Windows/Mac/Linux), printer, dan periferal lainnya.</li>
+          <li data-i18n="exp2_li2"><b>Troubleshooting &amp; Resolusi:</b> Mendiagnosis dan menyelesaikan masalah teknis perangkat keras, perangkat lunak, serta jaringan secara cepat, baik on-site maupun remote desktop.</li>
+          <li data-i18n="exp2_li3"><b>Keamanan &amp; Kepatuhan IT:</b> Memastikan seluruh perangkat pengguna akhir memiliki pembaruan keamanan terbaru, antivirus aktif, serta mematuhi kebijakan keamanan perusahaan.</li>
+          <li data-i18n="exp2_li4"><b>Manajemen Inventaris:</b> Mendokumentasikan, mencatat mutasi, dan mengelola inventaris aset IT serta lisensi perangkat lunak secara akurat.</li>
+          <li data-i18n="exp2_li5"><b>Edukasi &amp; Pelatihan Pengguna:</b> Memberikan panduan dan pelatihan singkat kepada staf guna memastikan penggunaan perangkat dan sistem IT baru secara efisien.</li>
         </ul>
       </div>
 
       <div class="exp-card r d2">
         <div class="exp-head">
-          <div class="exp-role" data-i18n="exp3_role">Junior Web Developer — Internship</div>
-          <span class="exp-tag tag-intern" data-i18n="exp3_tag">PKL · Baik Sekali</span>
+          <div class="exp-role">IT Helpdesk Technician L1 &amp; L2</div>
+          <span class="exp-tag tag-done" data-i18n="exp3_tag">Selesai · 4 Thn 5 Bln</span>
         </div>
-        <div class="exp-company">Lab Akselerasi</div>
-        <div class="exp-meta" data-i18n="exp3_meta">Jan – Mei 2019 · Program PKL SMK Negeri 1 Dlanggu</div>
+        <div class="exp-company">PT. Indonesia Tri Sembilan — Alliance One International Group</div>
+        <div class="exp-meta" data-i18n="exp3_meta">Sep 2021 – Jan 2026 · Mojokerto, East Java · Kontrak · On-site</div>
         <ul class="exp-list">
-          <li data-i18n="exp3_li1">Mengembangkan fitur aplikasi web dari nol dalam lingkungan profesional nyata selama masa SMK.</li>
-          <li data-i18n="exp3_li2">Meraih predikat <b>Baik Sekali</b> — cerminan etos kerja dan profesionalisme yang terus terjaga hingga hari ini.</li>
+          <li data-i18n="exp3_li1"><b>Level 1 &amp; 2 Support:</b> Merespons, mendokumentasikan, serta menyelesaikan tiket gangguan teknis terkait perangkat keras (PC/Laptop/Printer) dan software aplikasi. <span class="badge badge-green">↑ SLA +20%</span></li>
+          <li data-i18n="exp3_li2"><b>Network &amp; Infrastructure Troubleshooting:</b> Menangani masalah konektivitas jaringan (LAN, WLAN, VPN), mengecek perangkat jaringan, serta memantau server lokal, kestabilan internet (ISP), dan backup data harian.</li>
+          <li data-i18n="exp3_li3"><b>System Deployment &amp; Maintenance:</b> Melakukan instalasi OS (Windows/Linux), migrasi data, aplikasi standar perusahaan, serta perbaikan fisik ringan hardware (upgrade RAM/SSD).</li>
+          <li data-i18n="exp3_li4"><b>Security Compliance:</b> Memastikan kebijakan firewall, antivirus, dan enkripsi data pada perangkat pengguna akhir (end-point) selalu aktif dan terupdate.</li>
+          <li data-i18n="exp3_li5"><b>Asset Tracking:</b> Mencatat setiap mutasi aset IT ke dalam sistem inventaris guna memastikan keakuratan data perangkat secara berkala.</li>
         </ul>
       </div>
 
+      <div class="exp-card r d3">
+        <div class="exp-head">
+          <div class="exp-role" data-i18n="exp4_role">Junior Web Developer — Internship</div>
+          <span class="exp-tag tag-intern" data-i18n="exp4_tag">PKL · Baik Sekali</span>
+        </div>
+        <div class="exp-company">Lab Akselerasi</div>
+        <div class="exp-meta" data-i18n="exp4_meta">Jan – Mei 2019 · Program PKL SMK Negeri 1 Dlanggu</div>
+        <ul class="exp-list">
+          <li data-i18n="exp4_li1">Mengembangkan fitur aplikasi web dari nol dalam lingkungan profesional nyata selama masa SMK.</li>
+          <li data-i18n="exp4_li2">Meraih predikat <b>Baik Sekali</b> — cerminan etos kerja dan profesionalisme yang terus terjaga hingga hari ini.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section-label" data-i18n="proj_label">Projects</div>
+    <h2 class="section-h" data-i18n="proj_h">Proyek infrastruktur yang<br><em>benar-benar saya kerjakan.</em></h2>
+    <p class="proj-sub" data-i18n="proj_sub">PT. Indonesia Tri Sembilan · Proyek off-session tahunan</p>
+    <div class="proj-grid">
+      <div class="proj-card r">
+        <div class="proj-year">2025</div>
+        <div class="proj-title" data-i18n="proj1_title">Peremajaan CCTV &amp; Kabel Jaringan</div>
+        <div class="proj-desc" data-i18n="proj1_desc">Peremajaan sistem CCTV serta penggantian kabel jaringan di seluruh area perusahaan.</div>
+        <div class="proj-tags"><span>CCTV</span><span>Cabling</span></div>
+      </div>
+      <div class="proj-card r d2">
+        <div class="proj-year">2024</div>
+        <div class="proj-title" data-i18n="proj2_title">Migrasi Massal Windows 10 ke 11</div>
+        <div class="proj-desc" data-i18n="proj2_desc">Peremajaan komputer dan migrasi sistem operasi secara massal dari Windows 10 ke Windows 11.</div>
+        <div class="proj-tags"><span>Windows 11</span><span>OS Deployment</span></div>
+      </div>
+      <div class="proj-card r d3">
+        <div class="proj-year">2023</div>
+        <div class="proj-title" data-i18n="proj3_title">Peremajaan Server &amp; Jaringan PTP</div>
+        <div class="proj-desc" data-i18n="proj3_desc">Peremajaan server dan pemasangan jaringan komputer PTP di gudang baru perusahaan.</div>
+        <div class="proj-tags"><span>Server</span><span>PTP Network</span></div>
+      </div>
+      <div class="proj-card r d1">
+        <div class="proj-year">2022</div>
+        <div class="proj-title" data-i18n="proj4_title">Migrasi Mikrotik ke Cisco Meraki</div>
+        <div class="proj-desc" data-i18n="proj4_desc">Memigrasikan sistem jaringan perusahaan dari Mikrotik ke Cisco Meraki (cloud-managed networking).</div>
+        <div class="proj-tags"><span>Cisco Meraki</span><span>Mikrotik</span><span>Cloud-managed</span></div>
+      </div>
+      <div class="proj-card r d2">
+        <div class="proj-year">2021</div>
+        <div class="proj-title" data-i18n="proj5_title">Jaringan PTP &amp; CCTV Gudang Baru</div>
+        <div class="proj-desc" data-i18n="proj5_desc">Membangun jaringan komputer PTP dan instalasi sistem CCTV di gudang baru perusahaan.</div>
+        <div class="proj-tags"><span>PTP Network</span><span>CCTV</span></div>
+      </div>
     </div>
   </section>
 
@@ -706,24 +773,36 @@
         <div><div class="cert-name">SQL Database Management</div><div class="cert-from">DQLab</div><div class="cert-yr">Apr 2026</div></div>
       </div>
       <div class="cert-card r d2">
-        <div class="cert-ico">📊</div>
-        <div><div class="cert-name">Excel untuk Admin & Data</div><div class="cert-from">Jobstreet Indonesia</div><div class="cert-yr">Feb 2025</div></div>
+        <div class="cert-ico">🛡️</div>
+        <div><div class="cert-name">Introduction to Cybersecurity</div><div class="cert-from">Cisco Networking Academy</div><div class="cert-yr">Jul 2025</div></div>
       </div>
       <div class="cert-card r d3">
+        <div class="cert-ico">📊</div>
+        <div><div class="cert-name">Excel untuk Admin &amp; Data</div><div class="cert-from">Jobstreet Indonesia</div><div class="cert-yr">Feb 2025</div></div>
+      </div>
+      <div class="cert-card r">
+        <div class="cert-ico">🧮</div>
+        <div><div class="cert-name">Analisis Data Excel</div><div class="cert-from">Jobstreet Indonesia</div><div class="cert-yr">Feb 2025</div></div>
+      </div>
+      <div class="cert-card r d1">
         <div class="cert-ico">📈</div>
         <div><div class="cert-name">Dasar Data Science</div><div class="cert-from">Jobstreet Indonesia</div><div class="cert-yr">Feb 2025</div></div>
       </div>
-      <div class="cert-card r">
+      <div class="cert-card r d2">
         <div class="cert-ico">📋</div>
         <div><div class="cert-name">Beginner Project Management</div><div class="cert-from">Jobstreet Indonesia</div><div class="cert-yr">Feb 2025</div></div>
       </div>
-      <div class="cert-card r d1">
+      <div class="cert-card r d3">
         <div class="cert-ico">📝</div>
         <div><div class="cert-name">Microsoft Word Proficient</div><div class="cert-from">Jobstreet Indonesia</div><div class="cert-yr">Feb 2025</div></div>
       </div>
-      <div class="cert-card r d2">
+      <div class="cert-card r">
+        <div class="cert-ico">🌐</div>
+        <div><div class="cert-name">Getting Started with Cisco Packet Tracer</div><div class="cert-from">Cisco Networking Academy</div><div class="cert-yr">Nov 2023</div></div>
+      </div>
+      <div class="cert-card r d1">
         <div class="cert-ico">🏆</div>
-        <div><div class="cert-name">Junior Web Developer</div><div class="cert-from">Lab Akselerasi · Predikat Baik Sekali</div><div class="cert-yr">Mei 2019</div></div>
+        <div><div class="cert-name">Internship Junior Backend Web Developer</div><div class="cert-from">Lab Akselerasi · Predikat Baik Sekali</div><div class="cert-yr">Jul 2019</div></div>
       </div>
     </div>
 
@@ -752,6 +831,7 @@
           <div class="chip blue"><span class="chip-dot cd-blue"></span>IT Asset Management</div>
           <div class="chip blue"><span class="chip-dot cd-blue"></span>Knowledge Base Creation</div>
           <div class="chip blue"><span class="chip-dot cd-blue"></span>Technical Documentation</div>
+          <div class="chip blue"><span class="chip-dot cd-blue"></span>Microsoft Visio (Technical Design)</div>
           <div class="chip blue"><span class="chip-dot cd-blue"></span>Operational Reporting</div>
         </div>
       </div>
@@ -760,6 +840,9 @@
         <div class="chips" id="cg2">
           <div class="chip green"><span class="chip-dot cd-green"></span>Cisco · Mikrotik · Ubiquiti</div>
           <div class="chip green"><span class="chip-dot cd-green"></span>LAN / WAN / WLAN / VPN</div>
+          <div class="chip green"><span class="chip-dot cd-green"></span>Fiber Optic Network</div>
+          <div class="chip green"><span class="chip-dot cd-green"></span>CCTV &amp; Access Control</div>
+          <div class="chip green"><span class="chip-dot cd-green"></span>Telephony / PABX</div>
           <div class="chip green"><span class="chip-dot cd-green"></span>Windows / Linux / macOS</div>
           <div class="chip green"><span class="chip-dot cd-green"></span>Active Directory (AD DS)</div>
           <div class="chip green"><span class="chip-dot cd-green"></span>Server Administration</div>
@@ -778,6 +861,8 @@
           <div class="chip amber"><span class="chip-dot cd-amber"></span>Hardware Troubleshooting</div>
           <div class="chip amber"><span class="chip-dot cd-amber"></span>Hardware Lifecycle Mgmt</div>
           <div class="chip amber"><span class="chip-dot cd-amber"></span>Network Printer Setup</div>
+          <div class="chip amber"><span class="chip-dot cd-amber"></span>Fire Alarm System Maintenance</div>
+          <div class="chip amber"><span class="chip-dot cd-amber"></span>UPS &amp; Peripheral Support</div>
         </div>
       </div>
       <div class="r">
@@ -825,6 +910,41 @@
 <footer data-i18n="footer">© 2026 Dwi Fahyu Akbar · IT Support Specialist · Mojokerto, East Java</footer>
 
 <script>
+  // ── DYNAMIC EXPERIENCE (auto-updates from today's date) ──
+  // Edit tanggal di sini saja. month: 1–12. end: null = masih bekerja.
+  const CAREER_START = { year: 2021, month: 9 };            // karier IT dimulai Sep 2021
+  const JOBS = {
+    exp1: { start: { year: 2026, month: 10 }, end: null },                       // PT. Motasa Indonesia
+    exp2: { start: { year: 2026, month: 1  }, end: { year: 2026, month: 9 } },   // PT Kobin Keramik Industri
+    exp3: { start: { year: 2021, month: 9  }, end: { year: 2026, month: 1 } },   // PT Indonesia Tri Sembilan
+  };
+
+  // Hitung bulan inklusif (sama seperti LinkedIn: Sep 2021 – Jan 2026 = 4 thn 5 bln)
+  function monthsBetween(start, end) {
+    const now = new Date();
+    const e = end || { year: now.getFullYear(), month: now.getMonth() + 1 };
+    return (e.year - start.year) * 12 + (e.month - start.month) + 1;
+  }
+  function fmtDuration(m, lang) {
+    const y = Math.floor(m / 12), mo = m % 12;
+    const parts = [];
+    if (lang === 'en') {
+      if (y) parts.push(y + (y > 1 ? ' Yrs' : ' Yr'));
+      if (mo || !y) parts.push(mo + (mo > 1 ? ' Mos' : ' Mo'));
+    } else {
+      if (y) parts.push(y + ' Thn');
+      if (mo || !y) parts.push(mo + ' Bln');
+    }
+    return parts.join(' ');
+  }
+  function totalYears() { return Math.floor(monthsBetween(CAREER_START, null) / 12); }
+  function fillTokens(str, lang) {
+    return str
+      .replace(/\{\{yrs\}\}/g, totalYears())
+      .replace(/\{\{year\}\}/g, new Date().getFullYear())
+      .replace(/\{\{d_(exp\d)\}\}/g, (_, k) => fmtDuration(monthsBetween(JOBS[k].start, JOBS[k].end), lang));
+  }
+
   // ── TRANSLATIONS ──
   const translations = {
     id: {
@@ -832,44 +952,63 @@
       nav_exp: 'Experience',
       nav_edu: 'Education',
       nav_cert: 'Sertifikasi',
+      nav_proj: 'Proyek',
       nav_skills: 'Skills',
       nav_hire: 'Hire Me',
-      hero_desc: 'Profesional IT dengan <b>4+ tahun pengalaman</b> menjaga infrastruktur perusahaan manufaktur skala besar tetap beroperasi tanpa hambatan. Saya tidak hanya menyelesaikan masalah — saya <b>mencegahnya terjadi sejak awal.</b>',
+      hero_desc: 'Profesional IT dengan <b>{{yrs}}+ tahun pengalaman</b> menjaga infrastruktur perusahaan manufaktur skala besar tetap beroperasi tanpa hambatan. Saya tidak hanya menyelesaikan masalah — saya <b>mencegahnya terjadi sejak awal.</b>',
       hero_cta_contact: 'Hubungi Saya',
       stat_exp: 'Tahun Pengalaman',
       stat_sla: 'Peningkatan SLA',
       stat_ticket: 'Reduksi Tiket',
       stat_gpa: 'IPK / 4.00',
       about_h: 'IT Support bukan sekadar profesi —<br>ini tentang <em>menjaga bisnis tetap berjalan.</em>',
-      about_p1: 'Halo, saya <b>Dwi Fahyu Akbar</b> — praktisi IT yang berbasis di Mojokerto, East Java. Selama 4+ tahun, saya menjadi <b>tulang punggung infrastruktur IT</b> di lingkungan manufaktur skala besar.',
+      about_p1: 'Halo, saya <b>Dwi Fahyu Akbar</b> — praktisi IT yang berbasis di Mojokerto, East Java. Selama {{yrs}}+ tahun, saya menjadi <b>tulang punggung infrastruktur IT</b> di lingkungan manufaktur skala besar.',
       about_p2: 'Saya memiliki pengalaman mengelola server, jaringan LAN/WAN, keamanan endpoint, hingga backup &amp; recovery. Setiap tiket yang masuk bagi saya adalah tanggung jawab — bukan sekadar tugas teknis.',
       about_p3: 'Saya membawa <b>pendekatan terukur dan berbasis data</b>: SLA meningkat 20%, volume tiket berkurang 15%, dan seluruh proses didokumentasikan agar tim bisa mandiri.',
-      info_role: 'IT Support Specialist — Aktif',
+      info_role: 'Hardware Operation & Service Engineer — Aktif',
       info_open: 'Terbuka: On-site · Hybrid · Remote',
       info_edu: 'S1 Sistem Informasi · IPK 3.57/4.00',
-      kpi_sla: 'SLA Naik',
-      kpi_ticket: 'Tiket Turun',
-      kpi_yr: 'Thn Kerja',
-      kpi_gpa: 'IPK',
       exp_label: 'Experience',
       exp_h: 'Rekam jejak yang diukur<br>dari <em>dampak nyata.</em>',
-      exp1_tag: '● Saat Ini',
-      exp1_meta: 'Jan 2026 – Sekarang · Ngoro, East Java · Manufaktur Keramik',
-      exp1_li1: '<b>Infrastruktur End-to-End:</b> Mengelola server, jaringan LAN/WAN, dan seluruh perangkat IT perusahaan manufaktur skala besar — memastikan operasional berjalan 24/7 tanpa gangguan.',
-      exp1_li2: '<b>Single Point of Contact:</b> Menjadi satu-satunya pintu bantuan teknis bagi seluruh karyawan — respons cepat, solusi tepat, via telepon, chat, maupun tatap muka.',
-      exp1_li3: '<b>Troubleshooting Presisi:</b> Mendiagnosis dan menyelesaikan insiden teknis secara on-site maupun remote — memangkas waktu downtime secara signifikan. <span class="badge badge-green">↑ SLA +20%</span>',
-      exp1_li4: '<b>Edukasi & Pelatihan:</b> Membangun budaya mandiri teknis di antara karyawan melalui panduan dan mini-training yang terstruktur.',
-      exp2_tag: 'Selesai · 4 Thn 4 Bln',
-      exp2_meta: 'Sep 2021 – Jan 2026 · Ngoro, East Java · Agribisnis Multinasional',
-      exp2_li1: '<b>Helpdesk L1 & L2:</b> Menangani seluruh spektrum tiket teknis — dari masalah hardware/software dasar hingga konfigurasi jaringan kompleks — dengan kepatuhan penuh terhadap SLA.',
-      exp2_li2: '<b>Ticketing & Eskalasi:</b> Mengelola alur Service Desk secara menyeluruh: kategorisasi, prioritisasi, eskalasi, dan resolusi — tidak ada tiket yang terlewat atau terlambat.',
-      exp2_li3: '<b>Identity & Access Management:</b> Mengelola akun Active Directory, hak akses folder/aplikasi, dan provisioning pengguna baru — menjaga keamanan dan tata kelola data perusahaan.',
-      exp2_li4: '<b>Knowledge Base:</b> Membangun dokumentasi Self-Help FAQ yang mengurangi pertanyaan berulang secara drastis. <span class="badge badge-amber">↓ Tiket -15%</span>',
-      exp3_role: 'Junior Web Developer — Internship',
-      exp3_tag: 'PKL · Baik Sekali',
-      exp3_meta: 'Jan – Mei 2019 · Program PKL SMK Negeri 1 Dlanggu',
-      exp3_li1: 'Mengembangkan fitur aplikasi web dari nol dalam lingkungan profesional nyata selama masa SMK.',
-      exp3_li2: 'Meraih predikat <b>Baik Sekali</b> — cerminan etos kerja dan profesionalisme yang terus terjaga hingga hari ini.',
+      exp1_tag: '● Saat Ini · {{d_exp1}}',
+      exp1_meta: 'Okt 2026 – Sekarang · Mojokerto, East Java · Kontrak · On-site',
+      exp1_li1: '<b>Hardware &amp; Device Support:</b> Melakukan instalasi, konfigurasi, pemeliharaan, dan troubleshooting komprehensif pada PC, laptop, tablet, smartphone, serta perangkat pendukung seperti printer dan UPS.',
+      exp1_li2: '<b>Network Infrastructure:</b> Mengelola instalasi, konfigurasi, dan pemeliharaan jaringan LAN, Fiber Optic, CCTV, Access Control, serta Telephony/PABX perusahaan.',
+      exp1_li3: '<b>Technical Design &amp; Documentation:</b> Mengoperasikan software gambar teknis seperti Microsoft Visio untuk perancangan dan kebutuhan dokumentasi operasional.',
+      exp1_li4: '<b>Safety Systems Maintenance:</b> Memahami dan mengawasi operasional konsep dasar sistem keselamatan kerja, termasuk pemeliharaan sistem Fire Alarm.',
+      exp1_li5: '<b>User Support &amp; Coordination:</b> Menjadi titik kontak utama bagi karyawan dalam merespons, mendokumentasikan, dan menyelesaikan kendala teknis secara cepat dan efisien.',
+      exp2_tag: 'Selesai · {{d_exp2}}',
+      exp2_meta: 'Jan 2026 – Sep 2026 · Mojokerto, East Java · Kontrak · On-site',
+      exp2_li1: '<b>Dukungan Teknis &amp; Pemeliharaan:</b> Menjadi titik kontak pertama serta melakukan instalasi, konfigurasi, dan pemeliharaan rutin pada komputer (Windows/Mac/Linux), printer, dan periferal lainnya.',
+      exp2_li2: '<b>Troubleshooting &amp; Resolusi:</b> Mendiagnosis dan menyelesaikan masalah teknis perangkat keras, perangkat lunak, serta jaringan secara cepat, baik on-site maupun remote desktop.',
+      exp2_li3: '<b>Keamanan &amp; Kepatuhan IT:</b> Memastikan seluruh perangkat pengguna akhir memiliki pembaruan keamanan terbaru, antivirus aktif, serta mematuhi kebijakan keamanan perusahaan.',
+      exp2_li4: '<b>Manajemen Inventaris:</b> Mendokumentasikan, mencatat mutasi, dan mengelola inventaris aset IT serta lisensi perangkat lunak secara akurat.',
+      exp2_li5: '<b>Edukasi &amp; Pelatihan Pengguna:</b> Memberikan panduan dan pelatihan singkat kepada staf guna memastikan penggunaan perangkat dan sistem IT baru secara efisien.',
+      exp3_tag: 'Selesai · {{d_exp3}}',
+      exp3_meta: 'Sep 2021 – Jan 2026 · Mojokerto, East Java · Kontrak · On-site',
+      exp3_li1: '<b>Level 1 &amp; 2 Support:</b> Merespons, mendokumentasikan, serta menyelesaikan tiket gangguan teknis terkait perangkat keras (PC/Laptop/Printer) dan software aplikasi. <span class="badge badge-green">↑ SLA +20%</span>',
+      exp3_li2: '<b>Network &amp; Infrastructure Troubleshooting:</b> Menangani masalah konektivitas jaringan (LAN, WLAN, VPN), mengecek perangkat jaringan, serta memantau server lokal, kestabilan internet (ISP), dan backup data harian.',
+      exp3_li3: '<b>System Deployment &amp; Maintenance:</b> Melakukan instalasi OS (Windows/Linux), migrasi data, aplikasi standar perusahaan, serta perbaikan fisik ringan hardware (upgrade RAM/SSD).',
+      exp3_li4: '<b>Security Compliance:</b> Memastikan kebijakan firewall, antivirus, dan enkripsi data pada perangkat pengguna akhir (end-point) selalu aktif dan terupdate.',
+      exp3_li5: '<b>Asset Tracking:</b> Mencatat setiap mutasi aset IT ke dalam sistem inventaris guna memastikan keakuratan data perangkat secara berkala.',
+      exp4_role: 'Junior Web Developer — Internship',
+      exp4_tag: 'PKL · Baik Sekali',
+      exp4_meta: 'Jan – Mei 2019 · Program PKL SMK Negeri 1 Dlanggu',
+      exp4_li1: 'Mengembangkan fitur aplikasi web dari nol dalam lingkungan profesional nyata selama masa SMK.',
+      exp4_li2: 'Meraih predikat <b>Baik Sekali</b> — cerminan etos kerja dan profesionalisme yang terus terjaga hingga hari ini.',
+      proj_label: 'Projects',
+      proj_h: 'Proyek infrastruktur yang<br><em>benar-benar saya kerjakan.</em>',
+      proj_sub: 'PT. Indonesia Tri Sembilan · Proyek off-session tahunan',
+      proj1_title: 'Peremajaan CCTV &amp; Kabel Jaringan',
+      proj1_desc: 'Peremajaan sistem CCTV serta penggantian kabel jaringan di seluruh area perusahaan.',
+      proj2_title: 'Migrasi Massal Windows 10 ke 11',
+      proj2_desc: 'Peremajaan komputer dan migrasi sistem operasi secara massal dari Windows 10 ke Windows 11.',
+      proj3_title: 'Peremajaan Server &amp; Jaringan PTP',
+      proj3_desc: 'Peremajaan server dan pemasangan jaringan komputer PTP di gudang baru perusahaan.',
+      proj4_title: 'Migrasi Mikrotik ke Cisco Meraki',
+      proj4_desc: 'Memigrasikan sistem jaringan perusahaan dari Mikrotik ke Cisco Meraki (cloud-managed networking).',
+      proj5_title: 'Jaringan PTP &amp; CCTV Gudang Baru',
+      proj5_desc: 'Membangun jaringan komputer PTP dan instalasi sistem CCTV di gudang baru perusahaan.',
       edu_label: 'Education',
       edu_h: 'Fondasi akademis yang <em>solid</em>,<br>diperkuat pengalaman lapangan.',
       edu1_degree: 'S1 Sistem Informasi',
@@ -883,51 +1022,70 @@
       skills_h: 'Keahlian yang siap digunakan<br><em>mulai hari pertama.</em>',
       contact_h: 'Mari bekerja bersama. 🤝',
       contact_p: 'Saya siap bergabung dengan tim Anda dan memberikan dampak nyata sejak hari pertama. <b>Hubungi saya</b> melalui salah satu kanal berikut.',
-      footer: '© 2026 Dwi Fahyu Akbar · IT Support Specialist · Mojokerto, East Java',
+      footer: '© {{year}} Dwi Fahyu Akbar · IT Support Specialist · Mojokerto, East Java',
     },
     en: {
       nav_about: 'About',
       nav_exp: 'Experience',
       nav_edu: 'Education',
       nav_cert: 'Certifications',
+      nav_proj: 'Projects',
       nav_skills: 'Skills',
       nav_hire: 'Hire Me',
-      hero_desc: 'IT professional with <b>4+ years of experience</b> keeping large-scale manufacturing infrastructure running without disruption. I don\'t just fix problems — I <b>prevent them from happening in the first place.</b>',
+      hero_desc: 'IT professional with <b>{{yrs}}+ years of experience</b> keeping large-scale manufacturing infrastructure running without disruption. I don\'t just fix problems — I <b>prevent them from happening in the first place.</b>',
       hero_cta_contact: 'Contact Me',
       stat_exp: 'Years of Experience',
       stat_sla: 'SLA Improvement',
       stat_ticket: 'Ticket Reduction',
       stat_gpa: 'GPA / 4.00',
       about_h: 'IT Support is more than a profession —<br>it\'s about <em>keeping business running.</em>',
-      about_p1: 'Hi, I\'m <b>Dwi Fahyu Akbar</b> — an IT practitioner based in Mojokerto, East Java. For 4+ years, I have been the <b>backbone of IT infrastructure</b> in a large-scale manufacturing environment.',
+      about_p1: 'Hi, I\'m <b>Dwi Fahyu Akbar</b> — an IT practitioner based in Mojokerto, East Java. For {{yrs}}+ years, I have been the <b>backbone of IT infrastructure</b> in a large-scale manufacturing environment.',
       about_p2: 'I have experience managing servers, LAN/WAN networks, endpoint security, and backup &amp; recovery. Every incoming ticket is a responsibility for me — not just a technical task.',
-      about_p3: 'I bring a <b>data-driven, measurable approach</b>: SLA improved by 20%, ticket volume reduced by 15%, and all processes are documented so the team can operate independently.',
-      info_role: 'IT Support Specialist — Active',
+      about_p3: 'I bring a <b>data-driven, measurable approach</b>: every process is documented, and recurring issues are prevented through a Knowledge Base so the team can operate independently.',
+      info_role: 'Hardware Operation & Service Engineer — Active',
       info_open: 'Open to: On-site · Hybrid · Remote',
       info_edu: 'Bachelor of Information Systems · GPA 3.57/4.00',
-      kpi_sla: 'SLA Up',
-      kpi_ticket: 'Tickets Down',
-      kpi_yr: 'Yrs Work',
-      kpi_gpa: 'GPA',
       exp_label: 'Experience',
       exp_h: 'A track record measured<br>by <em>real impact.</em>',
-      exp1_tag: '● Current',
-      exp1_meta: 'Jan 2026 – Present · Ngoro, East Java · Ceramic Manufacturing',
-      exp1_li1: '<b>End-to-End Infrastructure:</b> Managing servers, LAN/WAN networks, and all IT devices in a large-scale manufacturing company — ensuring 24/7 operations without disruption.',
-      exp1_li2: '<b>Single Point of Contact:</b> Serving as the sole technical support channel for all employees — fast response, accurate solutions via phone, chat, or in person.',
-      exp1_li3: '<b>Precision Troubleshooting:</b> Diagnosing and resolving technical incidents on-site and remotely — significantly reducing downtime. <span class="badge badge-green">↑ SLA +20%</span>',
-      exp1_li4: '<b>Education & Training:</b> Building a culture of technical self-sufficiency among employees through structured guides and mini-training sessions.',
-      exp2_tag: 'Completed · 4 Yrs 4 Mos',
-      exp2_meta: 'Sep 2021 – Jan 2026 · Ngoro, East Java · Multinational Agribusiness',
-      exp2_li1: '<b>Helpdesk L1 & L2:</b> Handled the full spectrum of technical tickets — from basic hardware/software issues to complex network configurations — with full SLA compliance.',
-      exp2_li2: '<b>Ticketing & Escalation:</b> Managed the entire Service Desk workflow: categorization, prioritization, escalation, and resolution — no ticket was missed or delayed.',
-      exp2_li3: '<b>Identity & Access Management:</b> Managed Active Directory accounts, folder/application access rights, and new user provisioning — maintaining company data security and governance.',
-      exp2_li4: '<b>Knowledge Base:</b> Built Self-Help FAQ documentation that drastically reduced repetitive inquiries. <span class="badge badge-amber">↓ Tickets -15%</span>',
-      exp3_role: 'Junior Web Developer — Internship',
-      exp3_tag: 'Internship · Excellent',
-      exp3_meta: 'Jan – May 2019 · Internship Program at SMK Negeri 1 Dlanggu',
-      exp3_li1: 'Developed web application features from scratch in a real professional environment during vocational high school.',
-      exp3_li2: 'Achieved an <b>Excellent</b> grade — a reflection of the work ethic and professionalism maintained to this day.',
+      exp1_tag: '● Current · {{d_exp1}}',
+      exp1_meta: 'Oct 2026 – Present · Mojokerto, East Java · Contract · On-site',
+      exp1_li1: '<b>Hardware &amp; Device Support:</b> Performing comprehensive installation, configuration, maintenance, and troubleshooting on PCs, laptops, tablets, smartphones, and supporting devices such as printers and UPS units.',
+      exp1_li2: '<b>Network Infrastructure:</b> Managing installation, configuration, and maintenance of the company\'s LAN, Fiber Optic, CCTV, Access Control, and Telephony/PABX systems.',
+      exp1_li3: '<b>Technical Design &amp; Documentation:</b> Using technical drawing software such as Microsoft Visio for design work and operational documentation.',
+      exp1_li4: '<b>Safety Systems Maintenance:</b> Understanding and overseeing the operation of basic workplace safety systems, including Fire Alarm maintenance.',
+      exp1_li5: '<b>User Support &amp; Coordination:</b> Serving as the main point of contact for employees — responding to, documenting, and resolving technical issues quickly and efficiently.',
+      exp2_tag: 'Completed · {{d_exp2}}',
+      exp2_meta: 'Jan 2026 – Sep 2026 · Mojokerto, East Java · Contract · On-site',
+      exp2_li1: '<b>Technical Support &amp; Maintenance:</b> Acting as the first point of contact and performing installation, configuration, and routine maintenance on computers (Windows/Mac/Linux), printers, and other peripherals.',
+      exp2_li2: '<b>Troubleshooting &amp; Resolution:</b> Quickly diagnosing and resolving hardware, software, and network issues, both on-site and via remote desktop.',
+      exp2_li3: '<b>IT Security &amp; Compliance:</b> Ensuring all end-user devices have the latest security updates, active antivirus, and comply with company security policies.',
+      exp2_li4: '<b>Inventory Management:</b> Accurately documenting, tracking movements, and managing IT asset inventory and software licenses.',
+      exp2_li5: '<b>User Education &amp; Training:</b> Providing guides and short training sessions so staff can use new devices and IT systems efficiently.',
+      exp3_tag: 'Completed · {{d_exp3}}',
+      exp3_meta: 'Sep 2021 – Jan 2026 · Mojokerto, East Java · Contract · On-site',
+      exp3_li1: '<b>Level 1 &amp; 2 Support:</b> Responding to, documenting, and resolving technical incident tickets related to hardware (PC/laptop/printer) and application software. <span class="badge badge-green">↑ SLA +20%</span>',
+      exp3_li2: '<b>Network &amp; Infrastructure Troubleshooting:</b> Handling network connectivity issues (LAN, WLAN, VPN), checking network devices, and monitoring local servers, internet (ISP) stability, and daily data backups.',
+      exp3_li3: '<b>System Deployment &amp; Maintenance:</b> Installing operating systems (Windows/Linux), migrating data, deploying standard company applications, and performing minor hardware repairs (RAM/SSD upgrades).',
+      exp3_li4: '<b>Security Compliance:</b> Ensuring firewall policies, antivirus, and data encryption on end-user (endpoint) devices stay active and up to date.',
+      exp3_li5: '<b>Asset Tracking:</b> Recording every IT asset movement in the inventory system to keep device data accurate over time.',
+      exp4_role: 'Junior Web Developer — Internship',
+      exp4_tag: 'Internship · Excellent',
+      exp4_meta: 'Jan – May 2019 · Internship Program at SMK Negeri 1 Dlanggu',
+      exp4_li1: 'Developed web application features from scratch in a real professional environment during vocational high school.',
+      exp4_li2: 'Achieved an <b>Excellent</b> grade — a reflection of the work ethic and professionalism maintained to this day.',
+      proj_label: 'Projects',
+      proj_h: 'Infrastructure projects<br>I <em>actually delivered.</em>',
+      proj_sub: 'PT. Indonesia Tri Sembilan · Annual off-session projects',
+      proj1_title: 'CCTV &amp; Network Cabling',
+      proj1_desc: 'CCTV refresh and network cable replacement across the entire company area.',
+      proj2_title: 'Mass Windows 10 to 11 Migration',
+      proj2_desc: 'Computer refresh and mass operating system migration from Windows 10 to Windows 11.',
+      proj3_title: 'Server Refresh &amp; PTP Network',
+      proj3_desc: 'Server refresh and installation of a point-to-point (PTP) computer network at the company\'s new warehouse.',
+      proj4_title: 'Mikrotik to Cisco Meraki Migration',
+      proj4_desc: 'Migrated the company network from Mikrotik to Cisco Meraki (cloud-managed networking).',
+      proj5_title: 'PTP Network &amp; CCTV for New Warehouse',
+      proj5_desc: 'Built a PTP computer network and installed a CCTV system at the company\'s new warehouse.',
       edu_label: 'Education',
       edu_h: 'A <em>solid</em> academic foundation,<br>strengthened by field experience.',
       edu1_degree: 'Bachelor of Information Systems',
@@ -941,7 +1099,7 @@
       skills_h: 'Skills ready to deploy<br><em>from day one.</em>',
       contact_h: "Let's work together. 🤝",
       contact_p: 'I\'m ready to join your team and make a real impact from day one. <b>Contact me</b> through any of the channels below.',
-      footer: '© 2026 Dwi Fahyu Akbar · IT Support Specialist · Mojokerto, East Java',
+      footer: '© {{year}} Dwi Fahyu Akbar · IT Support Specialist · Mojokerto, East Java',
     }
   };
 
@@ -957,8 +1115,9 @@
     const t = translations[lang];
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
-      if (t[key] !== undefined) el.innerHTML = t[key];
+      if (t[key] !== undefined) el.innerHTML = fillTokens(t[key], lang);
     });
+    document.querySelectorAll('[data-dyn="yrs"]').forEach(el => el.textContent = totalYears() + '+');
     if (lang === 'en') {
       langLabel.textContent = 'ID';
       langBtn.querySelector('.lang-flag').textContent = '🇮🇩';
